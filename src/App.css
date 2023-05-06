@@ -1,0 +1,64 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+.bannerBtn{
+  background: url(./images//button.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+}
+.crazy-deals{
+  background: url(./images/delivery.jfif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+}
+.crazy-deals2{
+  background: url(./images/crazy\ deals\ \(2\).jfif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+}
+.gaming{
+  background: url(./images/Game.jfif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+}
+.clothing{
+  background: url(./images//CLOTHES\ RACK.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+}
+.sneakers{
+  background: url(./images/sneakers.jfif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+}
+.newsletter{
+  background-image: url(./images/b14.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+}
