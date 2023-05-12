@@ -1,8 +1,8 @@
 const upcomingSeason = () => {
     return ( 
         <section className="w-full px-2 sm:px-0 min-h-screen bg-white flex flex-col items-center pt-[4vh]">
-            <h1 className="text-[2.3rem] sm:text-[2.6rem] font-semibold mb-2">UPCOMING SEASONS</h1>
-            <p className="mb-[30px]">Summer/Winter Collections & Crazy Deals Coming Soon</p>
+            <h1 className="text-[2rem] text-center 2sm:text-[2.3rem] sm:text-[2.6rem] font-semibold mb-2">UPCOMING SEASONS</h1>
+            <p className="mb-[30px] text-center">Summer/Winter Collections & Crazy Deals Coming Soon</p>
             <div className="w-[90%] hidden lg:flex items-center justify-between mb-[50px]">
                 <span className="crazy-deals w-[46%] h-[43vh] text-white relative cursor-pointer rounded-lg">
                    <div className="w-full absolute bg-black/30 flex flex-col justify-center items-start pl-[20px] h-[43vh]">
@@ -34,7 +34,7 @@ const upcomingSeason = () => {
                         <p>Get Best Offers This Season</p>
                     </div>
                 </span>
-                <span className="sneakers w-full 2sm:w-[360px] xl:w-[30%] h-[30vh] flex flex-col text-white items-start justify-center  relative rounded-lg my-0 lg:my-4 xl:my-0">
+                <span className="sneakers w-full 2sm:w-[360px] xl:w-[30%] h-[30vh] flex flex-col text-white items-start justify-center  relative rounded-lg my-0 lg:my-4 xl:my-01">
                     <div className=" flex flex-col items-start justify-center pl-[20px] absolute w-full h-[30vh] bg-black/50">
                         <h1  className="text-[25px] font-semibold">SNEAKERS LOVER</h1>
                         <p>NEW TRENDING SNEAKERS</p>

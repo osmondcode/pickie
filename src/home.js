@@ -7,15 +7,18 @@ import Products from "./main-components/Products";
 import Navcategory from "./main-components/navCategory";
 import Upcomingseason from "./main-components/upcomingSeason";
 import Newsletter from "./main-components/newsletter";
+import ProfileInfo from "./main-components/profileInfo";
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import Carousel from 'react-bootstrap/Carousel';
 
 const Home = () => {
+    
     return ( 
         <section className="w-full min-h-screen bg-blue-100 relative overflow-hidden">
             <Navbar/>
             <Navcategory/>
+            <ProfileInfo/>
             <div>
                 <Carousel>
                     <Carousel.Item interval={2000}>

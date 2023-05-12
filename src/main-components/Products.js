@@ -10,8 +10,8 @@ import proVIII from "../images/products/proVIII.jpg";
 const Products = () => {
     return ( 
         <section className="w-full min-h-[100vh] flex flex-col items-center pt-5 bg-white">
-            <h1 className="text-[2.6rem] font-semibold mb-2">Featured Products</h1>
-            <p>Winter Collection New Morden Design</p>
+            <h1 className="text-[2rem] text-center 2sm:text-[2.6rem] font-semibold mb-2">Featured Products</h1>
+            <p className="text-center">Winter Collection New Morden Design</p>
             <div className="w-full min-h-screen flex items-center justify-center flex-wrap py-7 px-8 gap-[25px]">
                 <span className="w-[250px] py-[12px] px-[25px] border border-[#888] flex flex-col justify-center rounded-lg text-start cursor-pointer gap-[6px] relative duration-500 hover:shadow-md hover:shadow-[#888]">
                     <img src={proI} alt="" className="w-full rounded-md"/>

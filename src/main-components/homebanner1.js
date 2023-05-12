@@ -9,7 +9,7 @@ const HomeBanner = () => {
                 <button className="bannerBtn w-[200px] h-[50px] items-center justify-center mt-[18px] ml-[15px]">Shop Now</button>
             </div>
             <div className="w-1/2 h-full hidden md:flex items-start overflow-hidden relative">
-                <img src={BannerImg} alt="" className="object-cover xl:absolute left-0 bottom-0 "/>
+                <img src={BannerImg} alt="" className="object-cover xl:absolute left-0 bottom-[-20px] "/>
             </div>
         </section>
      );

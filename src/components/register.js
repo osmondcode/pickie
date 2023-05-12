@@ -15,8 +15,6 @@ import { Link } from 'react-router-dom';
             const email = document.getElementById('email').value;
             const password = document.getElementById('password').value;
             const buyer = document.getElementById('buyer').checked;
-            // const seller = document.getElementById('seller').value;
-
 
             
             try {
@@ -25,7 +23,6 @@ import { Link } from 'react-router-dom';
                   UserData1: email,    
                   UserData2: password,    
                   UserData3: buyer,    
-                //   UserData4: seller,    
                 });
                 console.log("Document written with ID: ", docRef.id);
               } catch (e) {

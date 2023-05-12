@@ -1,5 +1,14 @@
-import {FaBars, FaSearch, FaShoppingCart, FaTimes, FaUser, FaFacebookF, FaTwitter, FaInstagram, FaShoppingBag, FaAngleRight, } from "react-icons/fa";
+import {FaBars, FaSearch, FaShoppingCart, FaTimes, FaUser, FaFacebookF, FaTwitter, FaInstagram, FaShoppingBag, FaAngleRight, FaUserCheck, } from "react-icons/fa";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 const Navbar = () => {
+
+    const [user, setUser] = useState(<FaUser/>)
+
+    const userChecked = () => {
+        setUser(<FaUserCheck/>)
+    }
+
     return ( 
         <section className="w-full min-h-[12vh] flex flex-col items-center justify-between shadow shadow-[#888] fixed z-20 bg-blue-100">
             <div className="w-full  flex items-center justify-between px-[10px] 2sm:px-[20px] md:px-[25px]  bg-blue-100">
@@ -25,13 +34,13 @@ const Navbar = () => {
                     <li><button className="w-[40px] h-[40px] p-[5px] hover:bg-[#29b6f6] hover:text-white duration-500 flex items-center justify-center border border-[#29b6f6] rounded-full text-[#333]"><FaFacebookF/></button></li>
                     <li><button className="w-[40px] h-[40px] p-[5px] hover:bg-[#29b6f6] hover:text-white duration-500 flex items-center justify-center border border-[#29b6f6] rounded-full text-[#333]"><FaTwitter/></button></li>
                     <li><button className="w-[40px] h-[40px] p-[5px] hover:bg-[#29b6f6] hover:text-white duration-500 flex items-center justify-center border border-[#29b6f6] rounded-full text-[#333]"><FaInstagram/></button></li>
-                    <li className="relative"><button className="after:absolute after:w-[19px] after:flex after:items-center after:justify-center after:h-[19px] after:text-[16px] after:p-[3px] after:bg-[#29b6f6] after:rounded-full after:text-white after:content-['0'] after:top-[-5px] after:right-[-3px] w-[40px] h-[40px] p-[5px] hover:bg-[#29b6f6] hover:text-white duration-500 flex items-center justify-center border border-[#29b6f6] rounded-full text-[#333]"><FaShoppingCart/></button></li>
-                    <li><button className="w-[40px] h-[40px] p-[5px] hover:bg-[#29b6f6] hover:text-white duration-500 flex items-center justify-center border border-[#29b6f6] rounded-full text-[#333]"><FaUser/></button></li>
+                    <Link to="/Cart" className="relative"><button className="after:absolute after:w-[16px] sm:after:w-[19px] after:flex after:items-center after:justify-center after:h-[15px] sm:after:h-[19px] after:text-[13px] sm:after:text-[16px] after:p-[1px] sm:after:p-[3px] after:bg-[#29b6f6] after:rounded-full after:text-white after:content-['0'] after:top-[-5px] after:right-[-3px] w-[40px] h-[40px] p-[5px] hover:bg-[#29b6f6] hover:text-white duration-500 flex items-center justify-center border border-[#29b6f6] rounded-full text-[#333]"><FaShoppingCart/></button></Link>
+                    <li><button className="w-[40px] h-[40px] p-[5px] hover:bg-[#29b6f6] hover:text-white duration-500 flex items-center justify-center border border-[#29b6f6] rounded-full text-[#333]" onClick={userChecked}>{ user }</button></li>
                 </ul>
             </span>
-                <ul className="flex lg:hidden w-fit gap-[20px] items-center justify-center ">
-                    <li><button className=" flex items-center justify-center lg:hidden">Sign In <FaAngleRight/> <FaUser className="w-[23px] h-[23px]"/></button></li>
-                    <li className="relative"><button className="after:absolute after:w-[19px] after:flex after:items-center after:justify-center after:h-[19px] after:text-[16px] after:p-[3px] after:bg-[#29b6f6] after:rounded-full after:text-white after:content-['0'] after:top-[-12px] after:right-[-5px] flex lg:hidden"><FaShoppingCart className="w-[23px] h-[23px] "/></button></li>
+                <ul className="flex lg:hidden w-fit gap-[20px] items-center justify-center mt-[12px]">
+                    <Link to="/" className="no-underline text-black"><button className="flex items-center justify-center lg:hidden">Sign In <FaAngleRight/> <FaUser className="w-[23px] h-[23px]"/></button></Link>
+                    <li className="relative"><button className="after:absolute after:w-[16px] sm:after:w-[19px] after:flex after:items-center after:justify-center after:h-[16px] sm:after:h-[19px] after:text-[13px] sm:after:text-[16px] after:p-[1px] sm:after:p-[3px] after:bg-[#29b6f6] after:rounded-full after:text-white after:content-['0'] after:top-[-12px] after:right-[-5px] flex lg:hidden"><FaShoppingCart className="w-[23px] h-[23px] "/></button></li>
                 </ul>
             </span>
             </div>
