@@ -8,7 +8,7 @@ const HomeBanner = () => {
                 <p className="text-[#222] text-start">Save more width coupons & up to 70% off!</p>
                 <button className="bannerBtn w-[200px] h-[50px] items-center justify-center mt-[18px] ml-[15px]">Shop Now</button>
             </div>
-            <div className="w-1/2 h-full hidden md:flex items-start overflow-hidden relative">
+            <div className="w-1/2 h-full hidden md:flex items-start overflow-hidden relative pt-9">
                 <img src={BannerImg} alt="" className="object-cover xl:absolute left-0 bottom-[-20px] "/>
             </div>
         </section>

@@ -15,9 +15,9 @@ const Login = () => {
                 <h1 className="text-[#4128b8] text-[1.6rem] font-bold">Welcome back!</h1>
                 <form className="text-[#333] w-full 2sm:w-3/4 sm:w-2/3 text-start px-2 mt-3">
                     <label htmlFor="email">Email</label><br/>
-                    <input className="w-full h-[35px] border border-[#888] rounded-sm mb-2 text-[22px] px-2 py-1  outline-[#00c0ff]" type="email" id="email" /><br/>
+                    <input className="w-full h-[35px] border border-[#888] rounded-sm mb-2 text-[22px] px-2 py-1  outline-[#00c0ff]" type="email" id="email" required/><br/>
                     <label htmlFor="password">Password</label><br/>
-                    <input className="w-full h-[35px] border border-[#888] rounded-sm mb-2 text-[22px] px-2 py-1  outline-[#00c0ff]" type="password" id="password" /><br/>
+                    <input className="w-full h-[35px] border border-[#888] rounded-sm mb-2 text-[22px] px-2 py-1  outline-[#00c0ff]" type="password" id="password" required/><br/>
                     <button className="w-full bg-[#00c0ff] text-white py-2 text-[18px] rounded-sm mt-4">
                         <Link to="home">SIGN IN</Link>
                     </button>
