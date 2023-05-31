@@ -22,7 +22,7 @@ const Navbar = () => {
                     <li><button className="w-[40px] h-[40px] p-[5px] hover:bg-[#29b6f6] hover:text-white duration-500 flex items-center justify-center border border-[#29b6f6] rounded-full text-[#333]"><FaTwitter/></button></li>
                     <li><button className="w-[40px] h-[40px] p-[5px] hover:bg-[#29b6f6] hover:text-white duration-500 flex items-center justify-center border border-[#29b6f6] rounded-full text-[#333]"><FaInstagram/></button></li>
                     <Link to="/Cart" className="relative"><button className="w-[40px] h-[40px] p-[5px] hover:bg-[#29b6f6] hover:text-white duration-500 flex items-center justify-center border border-[#29b6f6] rounded-full text-[#333]"><FaShoppingCart/></button></Link>
-                    <li><button className="w-[40px] h-[40px] p-[5px] hover:bg-[#29b6f6] hover:text-white duration-500 flex items-center justify-center border border-[#29b6f6] rounded-full text-[#333]"><FaUser/></button></li>
+                    <Link to="/"><button className="w-[40px] h-[40px] p-[5px] hover:bg-[#29b6f6] hover:text-white duration-500 flex items-center justify-center border border-[#29b6f6] rounded-full text-[#333]"><FaUser/></button></Link>
                 </ul>
             </span>
                 <div className="flex lg:hidden w-fit gap-[20px] items-center justify-center mt-[12px]">

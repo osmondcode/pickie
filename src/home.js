@@ -12,7 +12,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import Carousel from 'react-bootstrap/Carousel';
 
-const Home = ({ productItems, handleAddButton }) => {
+const Home = ({ productItems, handleAddButton, handleAddSingle }) => {
     
     return ( 
         <section className="w-full min-h-screen bg-blue-100 relative overflow-hidden">
@@ -33,7 +33,7 @@ const Home = ({ productItems, handleAddButton }) => {
                 </Carousel>
             </div>
             <FeaturedProducts/>
-            <Products productItems={productItems} handleAddButton={handleAddButton}/>
+            <Products productItems={productItems} handleAddButton={handleAddButton} handleAddSingle={handleAddSingle}/>
             <Upcomingseason/>
             <Newsletter/>
         </section>
